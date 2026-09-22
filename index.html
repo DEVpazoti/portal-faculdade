@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal institucional da Faculdade Pazoti">
+  <title>Faculdade Pazoti</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-principal fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#inicio">Faculdade Pazoti</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Áreas de Ensino</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#cursos">Exatas</a></li>
+                <li><a class="dropdown-item" href="#cursos">Humanas</a></li>
+                <li><a class="dropdown-item" href="#cursos">Saúde</a></li>
+                <li><a class="dropdown-item" href="#cursos">Tecnologia</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6">
+            <h1 class="fw-bold">Bem-vindo à Faculdade Pazoti</h1>
+            <p class="lead">Há mais de 20 anos formando profissionais nas áreas de saúde, humanas, exatas e tecnologia, com professores experientes e aulas presenciais, EAD e híbridas.</p>
+            <a href="#cursos" class="btn btn-destaque btn-lg">Conheça nossos cursos</a>
+          </div>
+          <div class="col-md-6">
+            <img src="https://picsum.photos/seed/faculdade/800/500" class="img-fluid rounded" alt="Campus da Faculdade Pazoti">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cursos -->
+    <section id="cursos" class="secao">
+      <div class="container">
+        <h2 class="text-center mb-4">Nossos Cursos</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://picsum.photos/seed/direito/600/400" class="card-img-top" alt="Curso de Direito">
+              <div class="card-body">
+                <h3 class="card-title h5">Direito</h3>
+                <p class="card-text">Formação em ciências jurídicas com prática em núcleo jurídico próprio.</p>
+                <button type="button" class="btn btn-principal" data-bs-toggle="modal" data-bs-target="#modalDireito">Ver detalhes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://picsum.photos/seed/enfermagem/600/400" class="card-img-top" alt="Curso de Enfermagem">
+              <div class="card-body">
+                <h3 class="card-title h5">Enfermagem</h3>
+                <p class="card-text">Cuidado com o paciente, laboratórios de simulação e estágio em hospitais parceiros.</p>
+                <button type="button" class="btn btn-principal" data-bs-toggle="modal" data-bs-target="#modalEnfermagem">Ver detalhes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://picsum.photos/seed/administracao/600/400" class="card-img-top" alt="Curso de Administração">
+              <div class="card-body">
+                <h3 class="card-title h5">Administração</h3>
+                <p class="card-text">Gestão de empresas, finanças, marketing e pessoas.</p>
+                <button type="button" class="btn btn-principal" data-bs-toggle="modal" data-bs-target="#modalAdministracao">Ver detalhes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://picsum.photos/seed/engcivil/600/400" class="card-img-top" alt="Curso de Engenharia Civil">
+              <div class="card-body">
+                <h3 class="card-title h5">Engenharia Civil</h3>
+                <p class="card-text">Projeto e execução de obras, estruturas e saneamento.</p>
+                <button type="button" class="btn btn-principal" data-bs-toggle="modal" data-bs-target="#modalEngCivil">Ver detalhes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://picsum.photos/seed/engcomputacao/600/400" class="card-img-top" alt="Curso de Engenharia da Computação">
+              <div class="card-body">
+                <h3 class="card-title h5">Engenharia da Computação</h3>
+                <p class="card-text">Hardware, software e redes, com base forte em matemática e programação.</p>
+                <button type="button" class="btn btn-principal" data-bs-toggle="modal" data-bs-target="#modalEngComputacao">Ver detalhes</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="https://picsum.photos/seed/psicologia/600/400" class="card-img-top" alt="Curso de Psicologia">
+              <div class="card-body">
+                <h3 class="card-title h5">Psicologia</h3>
+                <p class="card-text">Estudo do comportamento humano com atendimento na clínica-escola.</p>
+                <button type="button" class="btn btn-principal" data-bs-toggle="modal" data-bs-target="#modalPsicologia">Ver detalhes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modais dos cursos -->
+    <div class="modal fade" id="modalDireito" tabindex="-1" aria-labelledby="tituloDireito" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title h5" id="tituloDireito">Direito</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Objetivos:</strong> formar bacharéis capazes de atuar na advocacia, em concursos públicos e na área empresarial.</p>
+            <p><strong>Carga horária:</strong> 3.700 horas (10 semestres)</p>
+            <p><strong>Público-alvo:</strong> quem concluiu o ensino médio e tem interesse em leis, justiça e argumentação.</p>
+            <p><strong>Descrição:</strong> o curso passa por direito civil, penal, constitucional e trabalhista. A partir do 7º semestre o aluno atende casos reais no núcleo de prática jurídica.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalEnfermagem" tabindex="-1" aria-labelledby="tituloEnfermagem" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title h5" id="tituloEnfermagem">Enfermagem</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Objetivos:</strong> formar enfermeiros preparados para atuar em hospitais, postos de saúde e atendimento domiciliar.</p>
+            <p><strong>Carga horária:</strong> 4.000 horas (10 semestres)</p>
+            <p><strong>Público-alvo:</strong> pessoas que gostam da área da saúde e de trabalhar com o cuidado de outras pessoas.</p>
+            <p><strong>Descrição:</strong> aulas teóricas e práticas em laboratório, com estágio supervisionado em hospitais e unidades básicas de saúde da região.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalAdministracao" tabindex="-1" aria-labelledby="tituloAdministracao" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title h5" id="tituloAdministracao">Administração</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Objetivos:</strong> preparar profissionais para planejar, organizar e gerenciar empresas de diferentes tamanhos.</p>
+            <p><strong>Carga horária:</strong> 3.000 horas (8 semestres)</p>
+            <p><strong>Público-alvo:</strong> quem quer trabalhar com gestão, abrir o próprio negócio ou crescer na empresa onde já trabalha.</p>
+            <p><strong>Descrição:</strong> disciplinas de contabilidade, marketing, recursos humanos, logística e finanças, com projetos feitos em parceria com empresas locais.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalEngCivil" tabindex="-1" aria-labelledby="tituloEngCivil" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title h5" id="tituloEngCivil">Engenharia Civil</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Objetivos:</strong> formar engenheiros para projetar, calcular e acompanhar obras civis.</p>
+            <p><strong>Carga horária:</strong> 3.600 horas (10 semestres)</p>
+            <p><strong>Público-alvo:</strong> quem tem facilidade com matemática e física e se interessa por construção.</p>
+            <p><strong>Descrição:</strong> o curso aborda estruturas, materiais, topografia, hidráulica e gestão de obras, com aulas em laboratório e visitas técnicas.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalEngComputacao" tabindex="-1" aria-labelledby="tituloEngComputacao" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title h5" id="tituloEngComputacao">Engenharia da Computação</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Objetivos:</strong> formar engenheiros que desenvolvem sistemas de hardware e software.</p>
+            <p><strong>Carga horária:</strong> 3.600 horas (10 semestres)</p>
+            <p><strong>Público-alvo:</strong> quem gosta de programação, eletrônica e resolver problemas com tecnologia.</p>
+            <p><strong>Descrição:</strong> disciplinas de algoritmos, circuitos digitais, sistemas embarcados, redes e banco de dados, com projetos práticos em todos os semestres.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modalPsicologia" tabindex="-1" aria-labelledby="tituloPsicologia" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title h5" id="tituloPsicologia">Psicologia</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Objetivos:</strong> formar psicólogos para atuar em clínicas, escolas, empresas e na saúde pública.</p>
+            <p><strong>Carga horária:</strong> 4.000 horas (10 semestres)</p>
+            <p><strong>Público-alvo:</strong> pessoas interessadas em entender o comportamento humano e ajudar outras pessoas.</p>
+            <p><strong>Descrição:</strong> estudo das principais teorias da psicologia, avaliação psicológica e estágio na clínica-escola da faculdade.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Indicadores -->
+    <section id="indicadores" class="secao bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">A Faculdade em Números</h2>
+        <div class="row row-cols-2 row-cols-lg-4 g-4 text-center">
+          <div class="col">
+            <div class="border rounded bg-white p-3 h-100">
+              <p class="numero">8.500</p>
+              <p class="mb-0">alunos formados</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border rounded bg-white p-3 h-100">
+              <p class="numero">6</p>
+              <p class="mb-0">cursos oferecidos</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border rounded bg-white p-3 h-100">
+              <p class="numero">120</p>
+              <p class="mb-0">professores</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="border rounded bg-white p-3 h-100">
+              <p class="numero">92%</p>
+              <p class="mb-0">de satisfação</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabela de cursos -->
+    <section id="tabela" class="secao">
+      <div class="container">
+        <h2 class="text-center mb-4">Modalidades e Valores</h2>
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Curso</th>
+                <th scope="col">Modalidade</th>
+                <th scope="col">Carga horária</th>
+                <th scope="col">Investimento (mensal)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Direito</td>
+                <td>Presencial</td>
+                <td>3.700 h</td>
+                <td>R$ 1.250,00</td>
+              </tr>
+              <tr>
+                <td>Enfermagem</td>
+                <td>Presencial</td>
+                <td>4.000 h</td>
+                <td>R$ 1.180,00</td>
+              </tr>
+              <tr>
+                <td>Administração</td>
+                <td>EAD</td>
+                <td>3.000 h</td>
+                <td>R$ 390,00</td>
+              </tr>
+              <tr>
+                <td>Engenharia Civil</td>
+                <td>Presencial</td>
+                <td>3.600 h</td>
+                <td>R$ 1.320,00</td>
+              </tr>
+              <tr>
+                <td>Engenharia da Computação</td>
+                <td>Híbrido</td>
+                <td>3.600 h</td>
+                <td>R$ 980,00</td>
+              </tr>
+              <tr>
+                <td>Psicologia</td>
+                <td>Presencial</td>
+                <td>4.000 h</td>
+                <td>R$ 1.150,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notícias -->
+    <section id="noticias" class="secao bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Notícias</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <article class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title h5">Inscrições abertas para o vestibular 2027</h3>
+                <p class="text-muted small">15/09/2026</p>
+                <p class="card-text">As inscrições vão até 30 de novembro e podem ser feitas pelo site ou na secretaria. A prova será no dia 6 de dezembro.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title h5">Semana Acadêmica de Tecnologia</h3>
+                <p class="text-muted small">02/09/2026</p>
+                <p class="card-text">Entre 20 e 24 de outubro teremos palestras e minicursos abertos a todos os alunos. A inscrição é gratuita.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title h5">Novo laboratório de Enfermagem</h3>
+                <p class="text-muted small">20/08/2026</p>
+                <p class="card-text">O laboratório de simulação foi inaugurado no bloco B e já está sendo usado nas aulas práticas do curso.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="secao">
+      <div class="container">
+        <h2 class="text-center mb-4">Contato</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <form action="#" method="post">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="telefone" class="form-label">Telefone</label>
+                  <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="curso" class="form-label">Curso de interesse</label>
+                  <select class="form-select" id="curso" name="curso" required>
+                    <option value="" selected disabled>Selecione um curso</option>
+                    <option value="direito">Direito</option>
+                    <option value="enfermagem">Enfermagem</option>
+                    <option value="administracao">Administração</option>
+                    <option value="engenharia-civil">Engenharia Civil</option>
+                    <option value="engenharia-computacao">Engenharia da Computação</option>
+                    <option value="psicologia">Psicologia</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-principal">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-principal text-white py-4">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-4">
+          <h2 class="h6 fw-bold">Faculdade Pazoti</h2>
+          <address class="mb-0">
+            Rua das Palmeiras, 1500 - Centro<br>
+            São Paulo - SP, 01000-000
+          </address>
+        </div>
+        <div class="col-md-4">
+          <h2 class="h6 fw-bold">Fale conosco</h2>
+          <p class="mb-1"><i class="bi bi-telephone"></i> (11) 3456-7890</p>
+          <p class="mb-0"><i class="bi bi-envelope"></i> contato@faculdadepazoti.edu.br</p>
+        </div>
+        <div class="col-md-4">
+          <h2 class="h6 fw-bold">Redes sociais</h2>
+          <a href="#" class="text-white me-3" aria-label="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+          <a href="#" class="text-white me-3" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+          <a href="#" class="text-white me-3" aria-label="LinkedIn"><i class="bi bi-linkedin fs-5"></i></a>
+          <a href="#" class="text-white" aria-label="YouTube"><i class="bi bi-youtube fs-5"></i></a>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center small mb-0">&copy; 2026 Faculdade Pazoti</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
